@@ -29,6 +29,7 @@ The following key bindings are just suggestions, I just didn't have these bound 
 
 1. Have a way to select the only one suite to run
 2. Have a way to select only one os to run
+3. Add ERT tests for the package
 
 ** License
 
