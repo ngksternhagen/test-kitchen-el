@@ -52,19 +52,19 @@
 
 ;;; Code:
 
-(defcustom test-kitchen-destroy-command "chef exec kitchen destroy"
+(defcustom test-kitchen-destroy-command " kitchen destroy"
   "The command used to destroy a kitchen.")
 
-(defcustom test-kitchen-list-command "chef exec kitchen list"
+(defcustom test-kitchen-list-command " kitchen list"
   "The command used to list the kitchen nodes.")
 
-(defcustom test-kitchen-test-command "chef exec kitchen test"
+(defcustom test-kitchen-test-command " kitchen test"
   "The command used to run the tests.")
 
-(defcustom test-kitchen-converge-command "chef exec kitchen converge"
+(defcustom test-kitchen-converge-command " kitchen converge"
   "The command used for converge project.")
 
-(defcustom test-kitchen-verify-command "chef exec kitchen verify"
+(defcustom test-kitchen-verify-command " kitchen verify"
   "The command use to verify the kitchen.")
 
 (defun test-kitchen-locate-root-dir ()
@@ -84,31 +84,31 @@
 
 ;;;###autoload
 (defun test-kitchen-destroy ()
-  "Run chef exec kitchen destroy in a different buffer."
+  "Run kitchen destroy in a different buffer."
   (interactive)
   (test-kitchen-run test-kitchen-destroy-command))
 
 ;;;###autoload
 (defun test-kitchen-list ()
-  "Run chef exec kitchen list in a different buffer."
+  "Run kitchen list in a different buffer."
   (interactive)
   (test-kitchen-run test-kitchen-list-command))
 
 ;;;###autoload
 (defun test-kitchen-test ()
-  "Run chef exec kitchen test in a different buffer."
+  "Run kitchen test in a different buffer."
   (interactive)
   (test-kitchen-run test-kitchen-test-command))
 
 ;;;###autoload
 (defun test-kitchen-converge ()
-  "Run chef exec kitchen converge in a different buffer."
+  "Run kitchen converge in a different buffer."
   (interactive)
   (test-kitchen-run test-kitchen-converge-command))
 
 ;;;###autoload
 (defun test-kitchen-verify ()
-  "Run chef exec kitchen verify in a different buffer."
+  "Run kitchen verify in a different buffer."
   (interactive)
   (test-kitchen-run test-kitchen-verify-command))
 
